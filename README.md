@@ -1,46 +1,73 @@
-# Netty-socketio Demo
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Demo for [Netty-socketio](https://github.com/mrniko/netty-socketio) project.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-# Usage example
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-1. Build or install Netty-socketio lib to your maven repository.
-   `mvn clean install`
+## Description
 
-2. Switch to /server folder and build server by maven.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-3. Run server by command
-   `mvn exec:java`
+## Installation
 
-4. Run client in browser, by opening* file /client/index.html
+```bash
+$ yarn install
+```
 
-# Note about Chrome and IE browsers
- If you want to open index.html in Chrome or IE browser you need to host it somewhere (nginx or apache, for example),
- or page will not work due to absence of correct "origin" http header.
+## Running the app
 
-# Demo scenarios
+```bash
+# development
+$ yarn run start
 
-By default you will run a chat which communcate with server via json objects.
-There are several demo scenarios available:
+# watch mode
+$ yarn run start:dev
 
- `Class` - `Web client page`
+# production mode
+$ yarn run start:prod
+```
 
- `com.corundumstudio.socketio.demo.ChatLauncher` - `/client/index.html`
+## Test
 
- `com.corundumstudio.socketio.demo.EventChatLauncher` - `/client/event-index.html`
+```bash
+# unit tests
+$ yarn run test
 
- `com.corundumstudio.socketio.demo.SslChatLauncher` - `/client/ssl-event-index.html`
+# e2e tests
+$ yarn run test:e2e
 
- `com.corundumstudio.socketio.demo.NamespaceChatLauncher` - `/client/namespace-index.html`
+# test coverage
+$ yarn run test:cov
+```
 
- `com.corundumstudio.socketio.demo.AckChatLauncher` - `/client/ack-index.html`
+## Support
 
- `com.corundumstudio.socketio.demo.BinaryEventLauncher` - `/client/binary-event-index.html`
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
+## Stay in touch
 
-You can select appropriate server launcher by command with `main.class` parameter:
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
- `mvn exec:java -Dmain.class=com.corundumstudio.socketio.demo.SslChatLauncher`
+## License
 
-
-   
+Nest is [MIT licensed](LICENSE).
